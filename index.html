@@ -4,17 +4,21 @@
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Fonts: Saira, Nunito, Figtree -->
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
     <title>Deenkode Homepage</title>
   </head>
-  <body>
+  <body class="bg-[#f5fff4]">
     <main class="mx-10 mt-5">
       <header class="flex justify-between items-center">
         <div class="logo max-w-40">
-          <img src="./public/images/Deenkode-logo-light.svg" alt="" class="w-full">
+          <img src="/images/Deenkode-logo-light.svg" alt="" class="w-full">
         </div>
         <div class="navbar w-1/2">
-          <ul class="flex space-x-20">
+          <ul class="flex space-x-20 font-[nunito]">
             <li><a href="#about">About</a></li>
             <li><a href="#about">Blog</a></li>
             <li><a href="#all-projects">All Projects</a></li>
@@ -23,43 +27,39 @@
         </div>
       </header>
 
-    <div id="intro">
-      <h1>DeenKode Organization</h1>
-      <p>An Islamic dev community. Coding for Allah's sake!</p>
+    <div id="intro" class="h-[40vh] flex flex-col justify-center items-center">
+      <h1 class="font-[saira] text-[80px] font-bold text-shadow-amber-100 text-shadow-sm">DeenKode Organization</h1>
+      <p class="font-[nunito] text-[45px] ">An Islamic dev community. Coding for Allah's sake!</p>
     </div>
 
-    <div id="project">
-      <h2>
+    <div id="project" class="border-2 border-[#dee6dd] px-12 pb-14">
+      <h2 class=" mb-12 mx-auto block w-[400px] font-[saira] text-[45px] font-semibold">
         Featured Projects
       </h2>
-      <div id="project-card-container">
-        <div class="project-card">
-          <div class="project-logo">
-            <img src="./public/images/" alt="">
+      <div id="project-card-container" class="flex justify-around  gap-10">
+        <div class="project-card w-1/4 py-12 border-2 border-[#dee6dd] bg-[#f2edd0] flex flex-col gap-6 justify-center items-center">
+          <div class="project-logo w-28">
+            <img src="/images/Deenkode-icon-light.png" alt="">
           </div>
           <div class="project-name">
-            <p>Deenkode Blog</p>
+            <p class="text-xl w-full">Deenkode Blog</p>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-logo">
-            <img src="./public/images/" alt="">
+        <div class="project-card w-1/4  py-12 border-2 border-[#dee6dd] bg-[#c8e5e2] flex flex-col gap-4 justify-center items-center">
+          <div class="project-logo w-32">
+            <img src="/images/inkpotro_icon-transparent.png" alt="">
           </div>
           <div class="project-name">
-            <p>Inkpotro Writing Software</p>
+            <p class="text-xl w-full text-center">Inkpotro <br> Writing Software</p>
           </div>
         </div>
-        <div class="project-card">
-          <div class="project-logo">
-            <img src="./public/images/" alt="">
+        
+        <div class="project-card w-1/4  py-12  border-2 border-[#dee6dd] bg-[#e8f1e9] flex flex-col  gap-6 justify-center items-center">
+          <div class="project-logo w-24">
+            <img src="./public/images/smile-face.png" alt="">
           </div>
           <div class="project-name">
-            <p>Intersteller Theme</p>
-          </div>
-        </div>
-        <div class="project-card">
-          <div class="project-name">
-            <p>More comming soon <br> Hang on...</p>
+            <p class="text-xl w-full">More comming soon <br> Hang on...</p>
           </div>
         </div>
       </div>
