@@ -2,17 +2,14 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="/Deenkode-icon-dark.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Fonts: Saira, Nunito, Figtree -->
  <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Nunito:ital,wght@0,200..1000;1,200..1000&family=Saira:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/src/style.css">
-    <!-- Add this in your <head> or before </body> -->
-<script src="https://unpkg.com/flowbite@latest/dist/flowbite.min.js"></script>
-
-    <title>Deenkode Homepage</title>
+    <title>deenkode</title>
   </head>
   <body class="bg-[#f5fff4]">
     <main class="mx-10 mt-5">
@@ -63,8 +60,11 @@
       <h2 class=" mb-12 mx-auto block max-w-[400px] font-[saira] text-[20px] py-5 sm:text-[30px] lg:tex-[40px] font-medium shadow rounded-2xl text-center">
         Featured Projects
       </h2>
+
       <div id="project-card-container" class="flex flex-col justify-center items-center lg:flex-row lg:justify-around gap-10">
-        <div class="project-card w-full md:max-w-[36rem] lg:max-w-[28rem] py-12 border-t-2 border-[#ddb873] bg-[#f2edd0] flex flex-col gap-6 justify-center items-center shadow-xl rounded-2xl cursor-pointer ease-in-out duration-300 scale-100 hover:border-2 hover:scale-105">
+        
+        <a href="https://deenkode.github.io/blog/" class=" w-full md:max-w-[36rem] lg:max-w-[28rem]">
+          <div class="project-card py-12 border-t-2 border-[#ddb873] bg-[#f2edd0] flex flex-col gap-6 justify-center items-center shadow-xl rounded-2xl cursor-pointer ease-in-out duration-300 scale-100 hover:border-2 hover:scale-105">
           <div class="project-logo w-36">
             <img src="/images/Deenkode-icon-light.png" alt="">
           </div>
@@ -72,16 +72,21 @@
             <p class="text-xl w-full">Deenkode Blog</p>
           </div>
         </div>
-        <div class="project-card w-full md:max-w-[36rem] lg:max-w-[28rem] py-12 border-t-2 border-[#92add1] bg-[#c8e5e2] flex flex-col gap-6 justify-center items-center shadow-xl rounded-2xl  cursor-pointer ease-in-out duration-300 scale-100 hover:border-2 hover:scale-105">
+        </a>
+
+        <a href="https://inkpotro.github.io/" class="w-full md:max-w-[36rem] lg:max-w-[28rem]">
+          <div class="project-card py-12 border-t-2 border-[#92add1] bg-[#c8e5e2] flex flex-col gap-6 justify-center items-center shadow-xl rounded-2xl  cursor-pointer ease-in-out duration-300 scale-100 hover:border-2 hover:scale-105">
           <div class="project-logo w-32">
             <img src="/images/inkpotro_icon-transparent.png" alt="">
           </div>
           <div class="project-name">
-            <p class="text-xl w-full text-center">Inkpotro <br> Writing Software</p>
+            <p class="text-xl w-full text-center">Inkpotro <br> Writing Software<p/>
           </div>
         </div>
+        </a>
         
-        <div class="project-card w-full md:max-w-[36rem] lg:max-w-[28rem] py-12  border-t-2 border-[#8fad86] bg-[#e8f1e9] flex flex-col  gap-6 justify-center items-center shadow-xl rounded-2xl  cursor-pointer ease-in-out duration-300 scale-100 hover:border-2 hover:scale-105">
+        <a href="#" class=" w-full md:max-w-[36rem] lg:max-w-[28rem]">
+          <div class="project-card py-12  border-t-2 border-[#8fad86] bg-[#e8f1e9] flex flex-col  gap-6 justify-center items-center shadow-xl rounded-2xl  cursor-pointer ease-in-out duration-300 scale-100 hover:border-2 hover:scale-105">
           <div class="project-logo w-32">
             <img src="/images/smile-face.png" alt="">
           </div>
@@ -89,6 +94,7 @@
             <p class="text-xl w-full">More comming soon <br> Hang on...</p>
           </div>
         </div>
+        </a>
       </div>
     </div>
     </main>
